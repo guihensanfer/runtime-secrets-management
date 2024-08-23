@@ -16,7 +16,7 @@ std::string generateGUID() {
 }
 
 void header(){
-    std::cout << "Bomdev Secrets Management Runtime" << std::endl;
+    std::cout << "Bomdev Runtime Secret Management" << std::endl;
     std::cout << "© 2024 Bomdev, Developed by Guilherme Ferreira" << std::endl << std::endl;
 }
 
@@ -36,7 +36,7 @@ int main() {
 
     // Solicitar o JSON de configuração
     std::string jsonInput;
-    std::cout << "\033[32m" << "Enter the project config content: " << "\033[0m"; // \033[0m reseta a cor para padrão
+    std::cout << "\033[35m" << "Enter the project config content: " << "\033[0m"; // \033[0m reseta a cor para padrão
     std::getline(std::cin, jsonInput);    
 
 
