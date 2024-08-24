@@ -70,20 +70,22 @@ int main() {
     std::string pass = "";
 
     // Loop para solicitar a senha do usuário
-    do {
-        if(pass != "")
-            std::cout << "\033[33m" << "Invalid password." << "\033[0m" << std::endl;            
+    if(isProduction){
+        do {
+            if(pass != "")
+                std::cout << "\033[33m" << "Invalid password." << "\033[0m" << std::endl;            
 
-        std::cout << "Enter the password: ";
-        std::getline(std::cin, pass);    
+            std::cout << "Enter the password: ";
+            std::getline(std::cin, pass);    
 
-        // Limpar o console após cada tentativa de senha
-        system("clear");
+            // Limpar o console após cada tentativa de senha
+            system("clear");
 
-        // Mostrar cabeçalho novamente
-        header();
+            // Mostrar cabeçalho novamente
+            header();
 
-    } while(pass == "" || !secure_compare(pass, password));
+        } while(pass == "" || !secure_compare(pass, password));
+    }    
 
     // Zerar a senha da memória após validação
     secure_zero(&pass[0], pass.size());
