@@ -2,7 +2,7 @@
 
 This project provides a native console application designed to securely input your web project's configuration file, including sensitive data such as environment variables, database credentials, and API keys, without leaving traces on the disk. The application ensures that all data is stored only in memory, reducing the risk of sensitive information being exposed during the configuration process.
 
-<strong>How Does It Works?</strong>
+<strong>How Does It Work?</strong>
 
     1. Pipe Creation: When the console application is launched, it generates a unique named pipe (e.g., \\.\pipe\SECURITY_GUILHERME_ENV on Windows or /tmp/SECURITY_GUILHERME_ENV on Linux). The name of the pipe is based on a GUID or a predefined format, ensuring that each session has a distinct pipe name.
     
