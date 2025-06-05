@@ -1,4 +1,4 @@
-<strong>Native Console Application for Secure Web Project Configuration</strong>
+<strong>Native Console Application for Secure Web Project Configuration with C++ For Linux and Windows</strong>
 
 This project provides a native console application designed to securely input your web project's configuration file, including sensitive data such as environment variables, database credentials, and API keys, without leaving traces on the disk. The application ensures that all data is stored only in memory, reducing the risk of sensitive information being exposed during the configuration process.
 
@@ -20,3 +20,5 @@ Navigate to the Linux branch to find the source code and instructions for compil
 
 * Windows Version
 Switch to the Windows branch for the version that is fully compatible with Windows environments. Compilation and usage instructions are provided
+
+
