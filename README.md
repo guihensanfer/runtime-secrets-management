@@ -21,4 +21,6 @@ Navigate to the Linux branch to find the source code and instructions for compil
 * Windows Version
 Switch to the Windows branch for the version that is fully compatible with Windows environments. Compilation and usage instructions are provided
 
+![Application Screenshot](screenshot.png)
+
 
